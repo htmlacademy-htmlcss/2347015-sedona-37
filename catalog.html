@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="main-header">
@@ -45,13 +46,12 @@
         <h1 class="filter-content-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
+            <a class="breadcrumbs-link breadcrumbs-home" href="index.html">
               <span class="visually-hidden">Домой</span>
-              <img class="breadcrumbs-img" src="images/breadcrumbs-home.svg" width="12" height="12" alt="Иконка домой">
             </a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
+            <a class="breadcrumbs-link breadcrumbs-hotels">Гостиницы</a>
           </li>
         </ul>
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
@@ -134,13 +134,14 @@
       <section class="select-control">
         <h2 class="control-title">Найдено гостиниц:<span class="content-result">38</span></h2>
         <select class="select-control" aria-label="Сортировка">
+        <div class="sorting-container">
           <option value="cheap" selected>Сначала дешёвые</option>
-          <option value="expensive" selected>Сначала дорогие</option>
-          <option value="popular" selected>Сначала популярные</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="popular">Сначала популярные</option>
         </select>
         <ul class="display-list">
           <li class="display-item">
-            <a class="button" href="#">
+            <a class="button button-light button-active" href="#">
               <span class="visually-hidden">Показать таблицей.</span>
             </a>
           </li>
@@ -154,7 +155,8 @@
               <span class="visually-hidden">Показать списком.</span>
             </a>
           </li>
-        </ul>
+          </ul>
+        </div>
         <ul class="hotel-list">
           <li class="hotel-card">
             <a class="card-link" href="hotel-1.html">
@@ -164,7 +166,7 @@
             <span class="card-type">Гостиница</span>
             <span class="card-price"> От 4000 ₽</span>
             <a class="button button-small" href="#">подробнее</a>
-            <a class="button button-small" href="#"">в избранное</a>
+            <a class="button button-small button-small-click" href="#"">в избранное</a>
           <ul class="raiting-list">
             <li class="raiting-star visually-hidden">Одна звезда</li>
             <li class="raiting-star visually-hidden">Две звезды</li>
@@ -181,7 +183,7 @@
             <span class="card-type">Гостиница</span>
             <span class="card-price"> От 5000 ₽</span>
             <a class="button button-small" href="#">подробнее</a>
-            <a class="button button-small" href="#"">в избранное</a>
+            <a class="button button-small-done" href="#"">в избранном</a>
             <ul class="raiting-list">
               <li class="raiting-star visually-hidden">Одна звезда</li>
               <li class="raiting-star visually-hidden">Две звезды</li>
@@ -198,7 +200,7 @@
             <span class="card-type">Гостиница</span>
             <span class="card-price"> От 2500 ₽</span>
             <a class="button button-small" href="#">подробнее</a>
-            <a class="button button-small" href="#"">в избранное</a>
+            <a class="button button-small button-small-click" href="#"">в избранное</a>
              <ul class="raiting-list">
               <li class="raiting-star visually-hidden">Одна звезда</li>
               <li class="raiting-star visually-hidden">Две звезды</li>
@@ -214,7 +216,7 @@
             <span class="card-type">Гостиница</span>
             <span class="card-price"> От 1500 ₽</span>
             <a class="button button-small" href="#">подробнее</a>
-            <a class="button button-small" href="#"">в избранное</a>
+            <a class="button button-small button-small-click" href="#"">в избранное</a>
             <ul class="raiting-list">
               <li class="raiting-star visually-hidden">Одна звезда</li>
               <li class="raiting-star visually-hidden">Две звезды</li>
@@ -260,19 +262,19 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social-list">
           <li class="social-item">
-            <a class="button" href="https://vk.com/htmlacademy">
+            <a class="social-link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте</span>
               <img src="images/vk.svg" width="22" height="17" alt="Иконка ВКонтанке">
             </a>
           </li>
           <li class="social-item">
-            <a class="button" href="https://t.me/htmlacademy ">
+            <a class="social-link" href="https://t.me/htmlacademy ">
               <span class="visually-hidden">Телеграм</span>
               <img src="images/telegram.svg" width="22" height="17" alt="Иконка Телеграм">
             </a>
           </li>
           <li class="social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Youtube</span>
               <img src="images/yt.svg" width="22" height="17" alt="Иконка Youtube">
             </a>
@@ -286,7 +288,7 @@
       <section class="footer-logo">
         <h2 class="visually-hidden">Логотип</h2>
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          <img src="images/HTML Academy.svg" width="114.9" height="32.9" alt="Логотип-ссылка на Академию">
+          <img src="images/HTML Academy.svg" width="115" height="33" alt="Логотип-ссылка на Академию">
         </a>
       </section>
     </footer>

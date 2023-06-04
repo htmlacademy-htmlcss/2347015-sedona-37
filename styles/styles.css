@@ -1,0 +1,339 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face{
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body{
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+}
+
+.main-header{
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.navigation-link{
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.hero{
+  background-image: url("../images/index-background.jpg");
+  background-color:#FFFFFF;
+  color: #000000;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 485px;
+}
+
+.index-title{
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.index-description{
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+  color: #333333;
+}
+
+.advantages-list {
+  text-align: center;
+}
+
+.advantages-title{
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+p.advantages-description {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.advantages-item{
+  color: #FFFFFF;
+}
+
+.advantages-item .advantages-town{
+  color: #FFFFFF;
+}
+
+.advantages-item .advantages-bridge{
+  color: #FFFFFF;
+}
+
+li.advantages-item:nth-child(1),
+li.advantages-item:nth-child(5){
+  color: #FFFFFF;
+  background-color:#83b3d3;
+}
+
+li.advantages-item:nth-child(2),
+li.advantages-item:nth-child(4){
+  background-color: #83B3D31F;
+}
+
+li.advantages-item:nth-child(3){
+  background-color: #83B3D333;
+}
+
+h2.services-title{
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p.services-description .services-home{
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+h3.services-title{
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.services-description{
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+
+li.services-item:nth-child(1),
+li.services-item:nth-child(3){
+  background-color: #83B3D31F;
+}
+
+.searching-title{
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.searching-description{
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+  color: #333333;
+}
+
+.button-searching{
+  text-align: center;
+
+}
+
+.subscribe{
+  background-image: url(../images/subscribe-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  width: 1200px;
+  min-height: 414px;
+}
+
+h2 .subscribe-title{
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+
+p .subscribe-description{
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.subscribe-button{
+  background-color: #83b3d3;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 36px;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.social-link{
+  background-color: #FFFFFF;
+  color: #82B3D3;
+}
+
+.contacts-link{
+  color: #000000;
+  width: 331px;
+  height: 40px;
+}
+
+.filter-content{
+  background-image: url("../images/catalog-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.filter-content-title{
+  font-weight: 700;
+  line-height: 78px;
+  font-size: 60px;
+  color: #FFFFFF;
+}
+
+.breadcrumbs{
+  color: #FFFFFF;
+}
+
+.breadcrumbs-link {
+  color: inherit;
+}
+
+.breadcrumbs-home{
+  background-image: url("../images/breadcrumbs-home.svg");
+  background-repeat: no-repeat;
+}
+
+.content-title{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+label.control {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.button-light{
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.card-link{
+  text-decoration: none;
+}
+
+.card-title{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.card-type{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.card-price{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.button-small-click{
+  background-color: #82B3D3;
+}
+
+.button-small-done{
+  background-color: #7DB54F;
+}
+
+.card-raiting{
+  background-color: #F2F2F2;
+  color:#333333;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pagination{
+  background-color: #FFFFFF;
+}
+
+.pagination-link{
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.pagination-current{
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.dots{
+  color: #000000;
+}
