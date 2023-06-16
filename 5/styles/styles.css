@@ -57,7 +57,7 @@ body{
 
 .navigation{
   display: flex;
-  width: 1200px;
+  width: 1060px;
   margin: 0 auto;
 }
 
@@ -69,7 +69,7 @@ body{
 }
 
 .navigation-user{
-  max-width: 308;
+  min-width: 308px;
   margin-left: auto;
 }
 
@@ -87,13 +87,25 @@ body{
   margin: 0 auto;
 }
 
-.hero{
+.main-image{
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   width: 1200px;
-  height: 485px;
+  min-height: 485px;
   color: #000000;
+}
+
+.main-image::after {
+  content: "";
+  background-image: url("../images/divider.svg");
+  display: block;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 60px;
+  background-position: center;
+  width: 1200px;
+  position: absolute;
 }
 
 .welcome{
@@ -102,7 +114,12 @@ body{
   padding-top: 51px;
 }
 
-.index-title{
+.advantages-greet{
+  padding: 69px 0px;
+  margin-bottom: 21px;
+}
+
+.greet-title{
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -111,16 +128,14 @@ body{
   width: 620px;
   height: 72px;
   margin: 0 auto;
-  margin-top: 69px;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
 }
 
-.index-description{
+.greet-description{
   text-align: center;
   color: #333333;
   width: 651px;
   margin: 0 auto;
-  padding-bottom: 90px;
 }
 
 .advantages-list {
@@ -171,8 +186,6 @@ body{
 .pictures-text{
   width: 230px;
   height: 160px;
-  display: flex;
-  flex-direction: column;
   padding: 103px 85px 103px 85px;
   margin: 0;
 }
@@ -231,6 +244,7 @@ li.advantages-item:nth-child(3){
 
 .services-list{
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
   height: 385px;
   padding: 0;
@@ -242,7 +256,6 @@ li.advantages-item:nth-child(3){
   line-height: 28px;
   text-transform: uppercase;
   text-align: center;
-  order: 1;
 }
 
 .services-description{
@@ -250,21 +263,24 @@ li.advantages-item:nth-child(3){
   line-height: 21px;
   text-align: center;
   color: #333333;
-  order: 3;
 }
 
 .services-item{
-  width: 230px;
-  padding: 80px 85px 80px 85px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
+  width: 400px;
+  min-height: 223px;
+  text-align: center;
+  padding: 81px 85px;;
 }
 
 li.services-item:nth-child(1),
 li.services-item:nth-child(3){
   background-color: #83B3D31F;
+}
+
+.searching{
+  padding: 96px 304px;
+  width: 592px;
+  min-height: 214px;
 }
 
 .searching-title{
@@ -275,7 +291,7 @@ li.services-item:nth-child(3){
   margin: 0 auto;
   width: 297px;
   height: 36px;
-  margin-top: 96px;
+  padding-bottom: 20px;
 }
 
 .searching-description{
@@ -284,14 +300,12 @@ li.services-item:nth-child(3){
   width: 592px;
   height: 52px;
   margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 54px;
+  padding-bottom: 54px;
 }
 
 .button-searching{
   text-align: center;
   background-color: #756157;
-  padding: 8px 50px 8px 50px;
   text-decoration: none;
   font-weight: 700;
   font-size: 20px;
@@ -299,10 +313,9 @@ li.services-item:nth-child(3){
   text-transform: uppercase;
   color: #ffffff;
   display: block;
-  max-width: 276px;
-  min-height: 36px;
-  margin: 54px auto 0;
-  margin-bottom: 96px;
+  width: 376px;
+  height: 52px;
+  margin: 0 auto;
 }
 
 .subscribe{
@@ -531,7 +544,8 @@ padding: 0;
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-left: 70px;
+  width: 1060px;
+  padding: 40px 70px;
 }
 
 .card-link{
@@ -581,6 +595,8 @@ padding: 0;
   background-color: #FFFFFF;
   display: flex;
   flex-wrap: wrap;
+  width: 1060px;
+  padding: 40px 70px 60px;
 }
 
 .pagination-link{
