@@ -14,6 +14,7 @@
   font-display: swap;
 }
 
+*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -36,10 +37,16 @@ body{
 }
 
 .page-container{
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   width: 1200px;
   background-color: #ffffff;
   box-shadow: 0 0 15px rgb(0, 0, 0.2);
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .button {
@@ -65,26 +72,45 @@ body{
   margin: 0;
   padding: 0;
   width: 439px;
-  margin-left: 44px;
+  margin-left: 168px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation-user{
-  min-width: 308px;
+  width: 308px;
   margin-left: auto;
+  display: flex;
+  justify-content: end;
 }
 
 .navigation-link{
+  display: block;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
   color: #000000;
+  padding: 20px 16px;
+}
+
+.navigation-user .navigation-link{
+  min-width: 44px;
+  min-height: 64px;
+}
+
+.navigation-item .button{
+  display: block;
+  margin-top: 14px;
+  width: 160px;
+  height: 36px;
 }
 
 .logo{
-  display: block;
-  margin: 0 auto;
+  line-height: 0;
+  position: absolute;
+  width: 140px;
 }
 
 .main-image{
@@ -99,13 +125,11 @@ body{
 .main-image::after {
   content: "";
   background-image: url("../images/divider.svg");
+  bottom: -76px;
+  width: 100%;
+  height: 57px;
+  position: relative;
   display: block;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  height: 60px;
-  background-position: center;
-  width: 1200px;
-  position: absolute;
 }
 
 .welcome{
@@ -116,7 +140,6 @@ body{
 
 .advantages-greet{
   padding: 69px 0px;
-  margin-bottom: 21px;
 }
 
 .greet-title{
@@ -126,7 +149,6 @@ body{
   text-transform: uppercase;
   text-align: center;
   width: 620px;
-  height: 72px;
   margin: 0 auto;
   padding-bottom: 25px;
 }
@@ -162,20 +184,18 @@ body{
 }
 
 .advantages-item {
+  text-align: center;
   color: #FFFFFF;
-  width: 230px;
-  height: 160px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 103px 85px 103px 85px;
+  width: 400px;
+  min-height: 160px;
+  margin: 0;
+  padding: 103px 85px;
 }
 
 .item-with-pictures{
   color: #FFFFFF;
   width: 1200px;
-  min-height: 385px;
+  height: 385px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -184,9 +204,7 @@ body{
 }
 
 .pictures-text{
-  width: 230px;
-  height: 160px;
-  padding: 103px 85px 103px 85px;
+  padding: 103px 85px;
   margin: 0;
 }
 
@@ -279,7 +297,6 @@ li.services-item:nth-child(3){
 
 .searching{
   padding: 96px 304px;
-  width: 592px;
   min-height: 214px;
 }
 
@@ -290,7 +307,6 @@ li.services-item:nth-child(3){
   text-align: center;
   margin: 0 auto;
   width: 297px;
-  height: 36px;
   padding-bottom: 20px;
 }
 
@@ -298,7 +314,7 @@ li.services-item:nth-child(3){
   text-align: center;
   color: #333333;
   width: 592px;
-  height: 52px;
+  line-height: 26px;
   margin: 0 auto;
   padding-bottom: 54px;
 }
@@ -312,28 +328,33 @@ li.services-item:nth-child(3){
   line-height: 36px;
   text-transform: uppercase;
   color: #ffffff;
-  display: block;
   width: 376px;
   height: 52px;
   margin: 0 auto;
+  display: inherit;
 }
 
-.subscribe{
+.index-subscribe{
   background-image: url(../images/subscribe-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #82B3D3;
   color: #FFFFFF;
-  width: 1200px;
-  min-height: 415px;
 }
 
-.subscribe .subscribe-title{
+.subscribe{
+  width: 1200px;
+}
+
+.index-subscribe-title{
+  color: #ffffff;
+}
+
+.subscribe-title{
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  color: #ffffff;
   text-align: center;
   width: 404px;
   min-height: 37px;
@@ -342,24 +363,35 @@ li.services-item:nth-child(3){
   margin: 0 auto;
 }
 
-.subscribe .subscribe-description{
+.index-subscribe-description{
+  color: #ffffff;
+}
+
+.subscribe-description{
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  color: #ffffff;
   text-align: center;
   width: 475px;
-  min-height: 53px;
   margin: 0 auto;
   padding-bottom: 54px;
+  min-height: 53px;
 }
 
 .subscribe-form{
-  text-align: center;
-  width: 452px;
-  height: 52px;
   margin: 0 auto;
   display: flex;
+  width: 684px;
+  padding-bottom: 104px;
+}
+
+.field{
+  width: 452px;
+  line-height: 24px;
+  border: none;
+  background-color: #F2F2F2;
+  padding: 12px 20px;
+  border-radius: 4px 0px 0px 4px;
 }
 
 .subscribe-button{
@@ -377,27 +409,36 @@ li.services-item:nth-child(3){
   padding: 8px 50px;
   font-weight: 700;
   border: none;
-  border-radius: 4px;
-
+  border-radius: 0 4px 4px 0;
 }
 
 .main-footer{
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  width: 1060px;
   min-height: 50px;
   padding: 40px 70px 30px;
 }
 
-.footer-social{
-  width: 142px;
-  min-height: 40px;
+.social-list{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 145px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .social-link{
+  display: flex;
+  flex-wrap: wrap;
   background-color: #FFFFFF;
   color: #82B3D3;
+  justify-content: center;
+  padding: 12px;
+  justify-items: center;
+  width: 48px;
+  height: 40px;
 }
 
 .footer-contacts{
@@ -408,9 +449,14 @@ li.services-item:nth-child(3){
 
 .contacts-link{
   color: #000000;
-  width: 400px;
-  height: 40px;
+  width: 331px;
+  line-height: 40px;
   text-decoration: none;
+  padding-top: 5px;
+}
+
+.htmlacademy-link{
+  display: block;
 }
 
 .footer-logo{
@@ -423,7 +469,7 @@ li.services-item:nth-child(3){
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 35px 70px 70px 70px;
+  padding: 35px 70px;
 }
 
 .inner-header{
@@ -435,18 +481,31 @@ li.services-item:nth-child(3){
   line-height: 78px;
   font-size: 60px;
   color: #FFFFFF;
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumbs{
   color: #FFFFFF;
-  width: 114px;
   display: flex;
   flex-direction: row;
-  padding-left: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 8px;
 }
 
 .breadcrumbs-link {
   color: inherit;
+  display: block;
+  min-width: 12px;
+  min-height: 12px;
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+  margin-right: 28px;
 }
 
 .breadcrumbs-home{
@@ -470,8 +529,7 @@ li.services-item:nth-child(3){
   padding: 0;
   margin: 0;
   width: 151px;
-  margin-right: 69px;
-  margin-bottom: 50px;
+  margin-right: 70px;
 }
 
 .content-group:nth-child(2) {
@@ -509,8 +567,18 @@ label.control {
 padding: 0;
 }
 
+.content-item{
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 13px;
+  cursor: pointer;
+}
+
 .button-submit{
   background-color: #82B3D3;
+  margin-bottom: 35px;
 }
 
 .button-reset{
@@ -522,15 +590,28 @@ padding: 0;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
   width: 1060px;
   margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  border: none;
 }
 
 .select-control .control-title{
   text-transform: uppercase;
   font-size: 30px;
   line-height: 36px;
+  margin: 0;
+}
+
+.display-list{
+  width: 160px;
+  padding: 0;
+}
+
+.sorting-container .button{
+  width: 48px;
+  height: 48px;
 }
 
 .button-light{
@@ -541,11 +622,17 @@ padding: 0;
 .hotel-list{
   display: grid;
   grid-template-columns: repeat(3, 340px);
-  margin: 0;
-  padding: 0;
   list-style: none;
   width: 1060px;
-  padding: 40px 70px;
+  gap: 20px;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.hotel-card{
+ border: 1px solid #E6E6E6;
+ padding: 20px;
 }
 
 .card-link{
@@ -596,7 +683,9 @@ padding: 0;
   display: flex;
   flex-wrap: wrap;
   width: 1060px;
-  padding: 40px 70px 60px;
+  height: 60px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .pagination-link{
@@ -620,21 +709,6 @@ padding: 0;
 
 ul{
   list-style-type: none;
-}
-
-.subscribe-inner .subscribe-title{
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.subscribe-inner .subscribe-description{
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
 }
 
 
