@@ -103,8 +103,8 @@ body{
 .navigation-item .button{
   display: block;
   margin-top: 14px;
-  width: 160px;
-  height: 36px;
+  min-width: 160px;
+  min-height: 36px;
 }
 
 .logo{
@@ -139,7 +139,7 @@ body{
 }
 
 .advantages-greet{
-  padding: 69px 0px;
+  margin: 69px 0px;
 }
 
 .greet-title{
@@ -150,7 +150,7 @@ body{
   text-align: center;
   width: 620px;
   margin: 0 auto;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .greet-description{
@@ -165,7 +165,6 @@ body{
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
   list-style: none;
   flex-wrap: wrap;
 }
@@ -195,7 +194,7 @@ body{
 .item-with-pictures{
   color: #FFFFFF;
   width: 1200px;
-  height: 385px;
+  min-height: 385px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -211,6 +210,7 @@ body{
 .advantages-image{
   width: 800px;
   display: block;
+  height: 100%;
 }
 
 .advantages-town{
@@ -329,9 +329,10 @@ li.services-item:nth-child(3){
   text-transform: uppercase;
   color: #ffffff;
   width: 376px;
-  height: 52px;
+  min-height: 52px;
   margin: 0 auto;
   display: inherit;
+  padding: 8px 50px;
 }
 
 .index-subscribe{
@@ -343,7 +344,8 @@ li.services-item:nth-child(3){
 }
 
 .subscribe{
-  width: 1200px;
+  display: flex;
+  flex-direction: column;
 }
 
 .index-subscribe-title{
@@ -358,9 +360,7 @@ li.services-item:nth-child(3){
   text-align: center;
   width: 404px;
   min-height: 37px;
-  padding-top: 96px;
-  padding-bottom: 20px;
-  margin: 0 auto;
+  margin: 96px 398px 20px;
 }
 
 .index-subscribe-description{
@@ -374,15 +374,15 @@ li.services-item:nth-child(3){
   text-align: center;
   width: 475px;
   margin: 0 auto;
-  padding-bottom: 54px;
+  margin-bottom: 54px;
   min-height: 53px;
 }
 
 .subscribe-form{
   margin: 0 auto;
   display: flex;
-  width: 684px;
-  padding-bottom: 104px;
+  min-width: 684px;
+  margin-bottom: 104px;
 }
 
 .field{
@@ -395,7 +395,7 @@ li.services-item:nth-child(3){
 }
 
 .subscribe-button{
-  display: inline-block;
+  display: block;
   background-color: #83b3d3;
   color: #FFFFFF;
   font-size: 20px;
@@ -404,8 +404,8 @@ li.services-item:nth-child(3){
   text-transform: uppercase;
   text-align: center;
   background-image: none;
-  width: 232px;
-  height: 52px;
+  min-width: 232px;
+  min-height: 52px;
   padding: 8px 50px;
   font-weight: 700;
   border: none;
@@ -587,31 +587,43 @@ padding: 0;
 
 .sorting-container{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
-  width: 1060px;
-  margin: 0 auto;
-  padding-top: 50px;
-  padding-bottom: 40px;
-  border: none;
+  height: 46px;
+  margin: 50px 70px 40px;
+}
+
+.control-select{
+  width: 292px;
+  height: 49px;
 }
 
 .select-control .control-title{
-  text-transform: uppercase;
   font-size: 30px;
   line-height: 36px;
-  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 338px;
+  margin-right: 200px;
 }
 
 .display-list{
+  display: flex;
+  flex-direction: row;
   width: 160px;
+  height: 48px;
   padding: 0;
+  margin-left: 70px;
 }
 
-.sorting-container .button{
+.display-item{
   width: 48px;
   height: 48px;
+  margin-right: 8px;
+
+}
+
+li.display-item:nth-child(3){
+  margin-right: 0;
 }
 
 .button-light{
@@ -633,10 +645,21 @@ padding: 0;
 .hotel-card{
  border: 1px solid #E6E6E6;
  padding: 20px;
+ display: grid;
+ grid-template-columns: repeat(2, 140px);
+ gap: 16px;
+ grid-template-rows: 1fr;
 }
 
 .card-link{
   text-decoration: none;
+  display: block;
+  grid-column: 1/-1;
+  color: inherit;
+  font-size: 24px;
+  Line-height: 28px;
+  font-weight: 700;
+  width: 300px;
 }
 
 .card-title{
@@ -646,15 +669,8 @@ padding: 0;
   color: #000000;
 }
 
-.card-type{
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #333333;
-}
-
-.card-price{
-  font-weight: 400;
+.card-type,
+.card-price {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -688,6 +704,17 @@ padding: 0;
   padding: 0;
 }
 
+.pagination-item {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+li.pagination-item:nth-child(6){
+margin-right: 0;
+}
+
 .pagination-link{
   color: #FFFFFF;
   background-color: #82B3D3;
@@ -696,6 +723,10 @@ padding: 0;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
+  display: block;
+  min-width: 60px;
+  min-height: 60px;
+  padding: 11px 4px;
 }
 
 .pagination-current{
