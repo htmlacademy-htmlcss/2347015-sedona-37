@@ -60,6 +60,7 @@ body{
   text-transform: uppercase;
   border: none;
   border-radius: 4px;
+  display: block;
 }
 
 .navigation{
@@ -624,24 +625,23 @@ padding: 0;
   margin-right: 8px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  box-sizing: border-box;
 }
 
 .display-item:first-child{
-  background-image: url(/images/vieviconone.svg);
+  background-image: url("../images/vieviconone.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid var(--icons-basic, #000);
+  border: 2px solid #000000;
 }
 
 .display-item:nth-child(2){
-  background-image: url(/images/vievicontwo.svg);
+  background-image: url("../images/vievicontwo.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .display-item:last-child{
-  background-image: url(/images/vievicontree.svg);
+  background-image: url("../images/vievicontree.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 0;
@@ -668,7 +668,13 @@ padding: 0;
  display: grid;
  grid-template-columns: repeat(2, 140px);
  gap: 16px 20px;
- grid-template-rows: 1fr;
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .card-link{
@@ -686,6 +692,7 @@ padding: 0;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+  margin: 16px 0 0 0;
 }
 
 .card-type,
@@ -693,6 +700,7 @@ padding: 0;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  margin: 0;
 }
 
 .card-price{
@@ -701,10 +709,17 @@ padding: 0;
 
 .button-small-click{
   background-color: #82B3D3;
+  width: 140px;
+  align-self: center;
 }
 
 .button-small-done{
   background-color: #7DB54F;
+  width: 140px;
+}
+
+.button-small{
+  font-size: 16px;
 }
 
 .card-raiting{
@@ -720,7 +735,7 @@ padding: 0;
 }
 
 .star{
-  background-image: url(/images/star.svg);
+  background-image: url("../images/star.svg");
   width: 18px;
   height: 17px;
   background-repeat: repeat-x;
