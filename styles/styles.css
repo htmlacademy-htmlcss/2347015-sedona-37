@@ -666,8 +666,9 @@ padding: 0;
  border: 1px solid #E6E6E6;
  padding: 20px;
  display: grid;
- grid-template-columns: repeat(2, 140px);
- gap: 16px 20px;
+ grid-template-columns: repeat(2, 1fr);
+ grid-template-rows: min-content min-content min-content min-content;
+ gap: 16px;
 }
 
 .card-image {
@@ -707,6 +708,22 @@ padding: 0;
   text-align: end;
 }
 
+.product-link {
+  background-color: #756157;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-align: center;
+  line-height: 20px;
+  width: 140px;
+  min-height: 36px;
+  padding: 8px 26px;
+}
+
 .button-small-click{
   background-color: #82B3D3;
   width: 140px;
@@ -740,6 +757,8 @@ padding: 0;
   height: 17px;
   background-repeat: repeat-x;
   background-size: 23px 17px;
+  display: block;
+  align-self: center;
 }
 
 .star-4{
