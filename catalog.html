@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
   <body>
     <div class="page-container">
@@ -63,20 +65,23 @@
             <ul class="content-list">
               <li class="content-item">
                 <label class="control">
-              <input class="control-input" type="checkbox" name="swimmingpool" checked>
-                   Бассейн
+                  <input class="control-input visually-hidden" type="checkbox" name="Pool" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Бассейн</span>
                 </label>
               </li>
               <li class="content-item">
                 <label class="control">
-              <input class="control-input" type="checkbox" name="parking" checked>
-                  Парковка
+                  <input class="control-input visually-hidden" type="checkbox" name="Parking" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Парковка</span>
                 </label>
               </li>
               <li class="content-item">
                 <label class="control">
-              <input class="control-input" type="checkbox" name="wi-fi">
-                   Wi-Fi
+                  <input class="control-input visually-hidden" type="checkbox" name="Wi-Fi">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Wi-Fi</span>
                 </label>
               </li>
             </ul>
@@ -86,27 +91,29 @@
             <ul class="content-list">
               <li class="content-item">
                 <label class="control">
-              <input class="control-input" type="radio" name="content-group" value="hotel" checked>
-                 Гостиница
+                  <input class="control-input visually-hidden" type="radio" name="product-group" value="hotel" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Гостиница</span>
                 </label>
               </li>
               <li class="content-item">
                 <label class="control">
-              <input class="control-input" type="radio" name="content-group" value="motel">
-                  Мотель
+                  <input class="control-input visually-hidden" type="radio" name="product-group" value="motel">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Мотель</span>
                 </label>
               </li>
               <li class="content-item">
                 <label class="control">
-              <input class="control-input" type="radio" name="content-group" value="apartment">
-                  Апартаменты
+                  <input class="control-input visually-hidden" type="radio" name="product-group" value="apartments">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Апартаменты</span>
                 </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="content-group-price">
             <legend class="content-title">Стоимость, ₽:</legend>
-            <div class="range">
               <div class="range-inputs">
                 <label class="content-label">
                   <input class="range-input range-input-from" type="number" name="min-price" value="0" placeholder="0">
@@ -118,16 +125,15 @@
                 </label>
               </div>
               <div class="range-scale">
-                <div class="range-bar">
+                <div class="range-scale-true" style="left: 0; width: 226px;">
                   <button class="range-toggle toggle-min" type="button">
-                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
                   </button>
                   <button class="range-toggle toggle-max" type="button">
-                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
                   </button>
-                </div>
+               </div>
               </div>
-            </div>
           </fieldset>
           <div class="content-buttons">
           <button class="button button-submit" type="submit">Применить</button>
@@ -178,7 +184,7 @@
           </li>
           <li class="hotel-card">
             <a class="card-link" href="hotel-2.html">
-              <img class="card-image" src="images/Villas-at-Poco-Diablo.jpg" widht="300" height="212" alt="Фото Villas at Poco Diablo.">
+              <img class="card-image" src="images/Villas-at-Poco-Diablo.jpg" width="300" height="212" alt="Фото Villas at Poco Diablo.">
               <h3 class="card-title">Villas at Poco Diablo</h3>
             </a>
             <p class="card-type">Гостиница</p>
