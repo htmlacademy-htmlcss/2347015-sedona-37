@@ -10,7 +10,7 @@
 </head>
   <body>
     <div class="page-container">
-    <header class="main-header">
+    <header class="main-header" data-test="header">
       <nav class="navigation">
         <a class="logo" href="index.html">
           <img src="images/logo.svg" width="140" height="70" alt="Логотип Седоны.">
@@ -44,8 +44,8 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner main-container">
-      <section class="filter-content">
+    <main class="main-inner main-container" data-test="main-inner">
+      <section class="filter-content" data-test="filter-content
         <div class="inner-header">
         <h1 class="filter-content-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -146,7 +146,7 @@
           </div>
         </form>
       </section>
-      <section class="select-control">
+      <section class="select-control" data-test="select-control">
         <div class="sorting-container">
         <h2 class="control-title">Найдено гостиниц:<span class="content-result"> 38</span></h2>
         <select class="control-select" aria-label="Сортировка">
@@ -251,7 +251,7 @@
           </li>
         </ul>
       </section>
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -263,7 +263,7 @@
         </form>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer" data-test="main-footer">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="social-list">
         <li class="social-item">
