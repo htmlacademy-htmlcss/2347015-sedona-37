@@ -203,6 +203,7 @@ body{
   background-size: cover;
   background-position: center bottom;
   text-align:center;
+  background-color: #b1d3ea;
 }
 
 .main-image::after {
@@ -234,14 +235,14 @@ body{
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  width: 620px;
+  max-width: 685px;
   margin: 0 auto 25px;
 }
 
 .greet-description{
   text-align: center;
   color: #333333;
-  width: 651px;
+  max-width: 685px;
   margin: 0 auto 90px;
 }
 
@@ -379,6 +380,7 @@ body{
   line-height: 28px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
 }
 
 .services-description{
@@ -391,13 +393,28 @@ body{
 
 .services-item{
   width: 400px;
-  min-height: 385px;
-  text-align: center;
-  padding: 81px 85px;
+  padding: 183px 85px 81px;
 }
 
-li.services-item:nth-child(1),
-li.services-item:nth-child(3){
+.services-item:first-child{
+  background-image: url(../images/home.svg);
+  background-repeat: no-repeat;
+  background-position: center top 80px;
+}
+
+.services-item:nth-child(2){
+  background-image: url(../images/food.svg);
+  background-repeat: no-repeat;
+  background-position: center top 80px;
+}
+
+.services-item:last-child{
+  background-image: url(../images/souvenirs.svg);
+  background-repeat: no-repeat;
+  background-position: center top 80px;
+}
+
+.services-background{
   background-color: #83B3D31F;
 }
 
@@ -536,7 +553,7 @@ li.services-item:nth-child(3){
 .main-footer{
   display: flex;
   justify-content: space-between;
-  padding: 44px 70px 36px;
+  padding: 47px 70px 32px;
   align-items: center;
   min-height: 50px;
 }
@@ -1318,8 +1335,6 @@ ul{
   top: 0;
   left: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
@@ -1333,6 +1348,7 @@ ul{
   border-radius: 30px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   overflow: auto;
+  margin: auto;
 }
 
 .modal-container-close{
@@ -1536,6 +1552,7 @@ ul{
   line-height: 24px;
   border-radius: 10px;
   background-color: #83b3d3;
+  font-size: 20px;
 }
 
 .modal-button:hover,
