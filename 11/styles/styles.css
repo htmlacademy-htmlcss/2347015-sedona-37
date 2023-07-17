@@ -258,10 +258,11 @@ body{
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
-  margin: 0;
+  margin: 0 auto;
   font-weight: 700;
   text-align: center;
   min-height: 56px;
+  max-width: 175px;
 }
 
 .advantages-title::after{
@@ -292,6 +293,7 @@ body{
   min-height: 385px;
   margin: 0;
   padding: 112px 85px;
+  justify-content: space-between;
 }
 
 .item-with-pictures{
@@ -324,18 +326,17 @@ body{
   color: #FFFFFF
 }
 
-li.advantages-item:nth-child(1),
-li.advantages-item:nth-child(5){
+.item-with-pictures{
   color: #FFFFFF;
   background-color:#83b3d3;
 }
 
-li.advantages-item:nth-child(2),
-li.advantages-item:nth-child(4){
+.advantages-place,
+.advantages-tourist{
   background-color: #83B3D31F;
 }
 
-li.advantages-item:nth-child(3){
+.advantages-road{
   background-color: #83B3D333;
 }
 
@@ -461,9 +462,9 @@ li.services-item:nth-child(3){
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
-  width: 404px;
+  max-width: 658px;
   min-height: 37px;
-  margin: 0 398px 20px;
+  margin: 0 auto 20px;
 }
 
 .index-subscribe-description{
@@ -477,14 +478,13 @@ li.services-item:nth-child(3){
   text-align: center;
   width: 475px;
   margin: 0 auto 54px;
-  min-height: 53px;
+  max-width: 540px;
 }
 
 .subscribe-form{
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  min-width: 684px;
+  max-width: 684px;
   justify-content: center;
 }
 
